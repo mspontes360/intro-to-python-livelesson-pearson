@@ -19,7 +19,7 @@ def user_did_win(answer, guessed_letters):
 
 def pick_random_word():
     with open('words.txt', 'r') as file:
-        words = file.readline()
+        words = file.readlines()
         word = random.choice(words).strip()
     return word
 
